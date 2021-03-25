@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<link href="jsgyak.css" rel="stylesheet">
+<head>
+    <meta charset="utf-8" />
+    <script src="jsgyak.js"></script>
+    <title></title>
+    <style>
+        .egymas_melle {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .doboz {
+            height: 30px;
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="ide">!</div>
+    <script>
+        let hova = document.getElementById("ide")
+
+        for (var s = 0; s < 10; s++) {
+
+            let sor = document.createElement("div");
+            hova.appendChild(sor);
+            sor.classList.add(".egymas_melle");
+
+
+            for (var o = 0; o < 10; o++) {
+                let szam = document.createElement("div");
+                hova.appendChild(szam);
+                szam.innerText = (s + 1) * (o + 1);
+                szam.classList.add(".doboz");
+                szam.style.color = "fuchsia";
+                szam.style.color = `rgb(${255 / 10 * s},0,${255 / 10 * s})`
+
+            }
+        }
+    </script>
+
+    <table id="ide2">!</table>
+    <script>
+        let hova = document.getElementById("ide2")
+
+        for (var s = 0; s < 10; s++) {
+
+            let sor = document.createElement("div");
+            hova.appendChild(sor);
+            sor.classList.add(".egymas_melle");
+
+
+            for (var o = 0; o < 10; o++) {
+                let szam = document.createElement("div");
+                hova.appendChild(szam);
+                szam.innerText = (s + 1) * (o + 1);
+                szam.classList.add(".elem");
+                szam.style.color = "fuchsia";
+                szam.style.color = `rgb(${255 / 10 * s},0,${255 / 10 * s})`
+
+            }
+        }
+    </script>
+
+
+    <div id="pascal"></div>
+    <script>console.log("Futunk!")</script>
+</body>
+</html>
