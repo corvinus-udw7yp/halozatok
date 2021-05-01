@@ -35,7 +35,7 @@ namespace HajosTeszt.Controllers
         [Route("questions/{sorszám}")]
         public ActionResult M2(int sorszám)
         {
-            HajostesztContext context = new HajostesztContext();
+            hajostesztContext context = new hajostesztContext();
             var kérdés = (from x in context.Questions
                           where x.QuestionId == sorszám
                           select x).FirstOrDefault();
@@ -45,4 +45,16 @@ namespace HajosTeszt.Controllers
             return new JsonResult(kérdés);
         }
     }
+
+    [HttpGet]
+    [Route("questions/count")]
+    public int M4() //Tetszőleges metódusnév
+    {
+        hajostesztContext context = new hajostesztContext();
+        int kérdésekSzáma = context.Questions.Count();
+
+        return kérdésekSzáma;
+    }
+
+  
 }
