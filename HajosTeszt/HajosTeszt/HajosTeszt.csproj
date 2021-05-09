@@ -6,12 +6,14 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\10hajo.html" />
+    <Content Remove="wwwroot\index_regi.html" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="wwwroot\10hajo.html" />
     <None Include="wwwroot\hajo.css" />
     <None Include="wwwroot\hajo.html" />
+    <None Include="wwwroot\index_regi.html" />
     <None Include="wwwroot\index.html" />
   </ItemGroup>
 

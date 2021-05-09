@@ -1,14 +1,31 @@
 ﻿<!DOCTYPE html>
-<html>
-<link href="jsgyak.css" rel="stylesheet">
+<html lang="en" {IF CLASSES}class="classes" { /IF}>
 <head>
     <meta charset="utf-8" />
-    <script src="jsgyak.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link href="hajo.css" rel="stylesheet">
+    <script src="tizedik.js"></script> //A solution explorer-ből be is húzható
 </head>
 <body>
-    <div id="pascal"></div>
+    <div id="külső">
+        <div id="kérdés_szöveg">
+            Kérdés szövege
+        </div>
 
-
+        <div id="középső">
+            <div id="válaszok">
+                <div id="válasz1" onclick="választás(1)" class="kerdes kattintható">Válasz 1</div>
+                <div id="válasz2" onclick="választás(2)" class="kerdes kattintható">Válasz 2</div>
+                <div id="válasz3" onclick="választás(3)" class="kerdes kattintható">Válasz 3</div>
+            </div>
+            <div id="kép_keret">
+                <img id="kép1" src="" />
+            </div>
+        </div>
+        <div id="vezérlő">
+            <div id="vissza_gomb" class="gomb kattintható">Vissza</div>
+            <div id="előre_gomb" class="gomb kattintható">Előre</div>
+        </div>
+    </div>
 </body>
-</html>

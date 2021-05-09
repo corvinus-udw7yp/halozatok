@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace HajosTeszt.Controllers
 {
     //[Route("api/[controller]")]
-    public class BoatController : Controller
+    /*public class BoatController : Controller
     {
 
         [HttpGet]
@@ -56,5 +56,5 @@ namespace HajosTeszt.Controllers
         return kérdésekSzáma;
     }
 
-  
+    */  
 }
